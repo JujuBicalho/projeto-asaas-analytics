@@ -1,0 +1,17 @@
+# Ignorar arquivos compilados do dbt
+transformacoes_asaas/target/
+transformacoes_asaas/dbt_packages/
+transformacoes_asaas/logs/
+
+# Ignorar arquivos de sistema do Mac
+.DS_Store
+
+# Ignorar arquivos do Python (cache)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ignorar arquivos de configuração locais (que podem ter senhas)
+.env
+profiles.yml

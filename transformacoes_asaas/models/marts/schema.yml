@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: mart_vendas
+    description: >
+      Tabela analítica final que consolida transações e dados de clientes.
+      Esta tabela aplica regras de deduplicação (mantendo a transação mais recente)
+      e enriquece os dados com faixas etárias e categorias de ticket.
+      Ideal para análises de performance de vendas e perfil de clientes.
+
+    columns:
+      - name: id
+        description: "Chave única identificadora da transação (PK)."
+        tests:
+          - unique
+          - not_null
+
+      - name: id_cliente
+        description: "Chave estrangeira do cliente que realizou a compra."
+        tests:
+          - not_null
+
+      - name: valor_transacao
+        description: "Valor monetário total da transação (em Reais)."
+
+      - name: metodo_pagamento
+        description: "Forma de pagamento utilizada (ex: Cartão de Crédito, PIX, Boleto)."
+
+      - name: faixa_etaria
+        description: >
+          Segmentação do cliente baseada na idade atual.
+          Regras: 
+          - < 18: Menor de Idade
+          - 18 a 59: Adulto
+          - 60+: Idoso
+        tests:
+          - accepted_values:
+              values: ['Menor de Idade', 'Adulto', 'Idoso', 'Não Identificado']
+
+      - name: categoria_ticket
+        description: >
+          Classificação da venda baseada no valor monetário.
+          - Baixo Valor: < 1000
+          - Médio Valor: 1000 a 5000
+          - Alto Valor: > 5000
+
+      - name: profissao
+        description: "Profissão do cliente normalizada e higienizada (sem erros de digitação)."

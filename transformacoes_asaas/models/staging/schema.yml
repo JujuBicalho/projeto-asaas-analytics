@@ -1,0 +1,32 @@
+############# DOCUMENTAÇÃO #############
+version: 2
+
+models:
+  - name: stg_transacoes
+    description: "Tabela de transações limpa e com regras de negócio."
+    columns:
+      - name: id
+        description: "Chave única da transação."
+        tests:
+          - unique
+          - not_null
+
+      - name: id_cliente
+        description: "Identificador do cliente."
+        tests:
+          - not_null
+
+      - name: status_transacao
+        description: "Status original da transação."
+        tests:
+          - accepted_values:
+              values: ['CONFIRMADO', 'FALHA', 'PROCESSANDO', 'ESTORNADO', 'PENDENTE']
+
+      - name: metodo_pagamento
+        description: "Forma de pagamento utilizada."
+        tests:
+          - accepted_values:
+              values: ['Cartão de Crédito', 'Cartão de Débito', 'BOLETO', 'PIX', 'TED']
+
+      - name: categoria_ticket
+        description: "Classificação do valor da transação (Baixo, Médio, Alto)."
