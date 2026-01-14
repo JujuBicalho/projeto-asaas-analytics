@@ -5,23 +5,14 @@ WITH source AS (
 
 limpeza_basica AS (
     SELECT
-        CAST(id_cliente AS INTEGER) AS id_cliente,
-        TRIM(
-            REGEXP_REPLACE(nome, '^(Dr\.|Dra\.|Sr\.|Sra\.|Srta\.)\s*', '', 'i')
-        ) AS nome_cliente,
-        LOWER(
-            TRANSLATE(
-                REPLACE(email, '..', '.'),
-                'áàãâäéèêëíìîïóòõôöúùûüçñÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÔÖÚÙÛÜÇÑ',
-                'aaaaaeeeeiiiiooooouuuucnAAAAAEEEEIIIIOOOOOUUUUCN'
-            )
-        ) AS email_cliente,
-        
+        {{limpar_id('id_cliente')}} AS id_cliente,
+        {{limpar_nome('nome')}} AS nome_cliente,
+        {{limpar_email('email')}} AS email_cliente,
         CAST(data_nascimento AS DATE) AS data_nascimento_original,
-        INITCAP(genero) AS genero,
-        UPPER(estado) AS estado_cliente,
-        profissao,
-        cidade AS cidade_cliente
+        {{limpar_texto('estado')}} AS estado_cliente,
+        {{limpar_texto('genero')}} AS genero,
+        {{limpar_texto('profissao')}} AS profissao,
+        {{limpar_texto('cidade')}} AS cidade_cliente
 
     FROM source
 ),

@@ -6,15 +6,10 @@ WITH source AS (
 renomeado AS (
     SELECT
         transaction_id AS id,
-        CAST(NULLIF(REGEXP_REPLACE(CAST(id_cliente AS TEXT), '\.0$', ''), '') AS INTEGER) AS id_cliente,
-        CAST(data_criacao AS TIMESTAMP) AS data_transacao,
-        CAST(valor_transacao AS NUMERIC) AS valor_transacao,
-        CASE 
-            WHEN metodo_pagamento = 'CARTAO_DEBITO' THEN 'Cartão de Débito'
-            WHEN metodo_pagamento = 'CARTAO_CREDITO' THEN 'Cartão de Crédito'
-            ELSE metodo_pagamento 
-        END AS metodo_pagamento,
-
+        {{limpar_id('id_cliente')}} AS id_cliente, 
+        {{limpar_data_criacao('data_criacao')}} AS data_transacao,
+        {{limpar_valor_transacao('valor_transacao')}} AS valor_transacao,
+        {{limpar_metodo_pagamento('metodo_pagamento')}} AS metodo_pagamento,
         status_transacao
 
     FROM source
