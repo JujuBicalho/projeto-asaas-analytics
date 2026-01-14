@@ -2,13 +2,13 @@
 **Desenvolvido por Juliana Bicalho** 
 **Linkedin: https://www.linkedin.com/in/jujubicalho**
 
-Este projeto simula um ambiente real de Engenharia de Dados de uma Fintech, focando na construção de um **Data Warehouse** moderno, escalável e confiável.
+Este projeto simula um ambiente real de Analytics Engineering de uma Fintech escolhida aleatoriamente, a Asaas, focando na construção de um **Data Warehouse** moderno, escalável e confiável.
 
 O objetivo principal foi ingerir dados brutos (Raw), tratá-los e limpá-los (Staging) e criar tabelas analíticas de negócio (Marts) prontas para consumo no Power BI.
 
 ## Arquitetura do Projeto (ELT)
 
-O projeto segue a arquitetura de **ELT (Extract, Load, Transform)**:
+O projeto segue a arquitetura de **ELT**:
 
 1.  **Extract & Load (Python):** Scripts em Python (`Faker`) geram dados sintéticos de Clientes e Transações (com ruídos propositais para simular o mundo real) e carregam na camada `Raw` do Postgres.
 2.  **Transform (dbt Core):** O dbt é responsável por toda a limpeza, testagem e modelagem dos dados dentro do Data Warehouse.
