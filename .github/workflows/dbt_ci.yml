@@ -24,28 +24,28 @@ jobs:
       run: |
         pip install dbt-postgres
 
-    - name: Criar Profile Temporário
+    - name: Criar Arquivo de Configuração (profiles.yml)
       run: |
-        mkdir -p ~/.dbt
-        echo "transformacoes_asaas:" > ~/.dbt/profiles.yml
-        echo "  target: dev" >> ~/.dbt/profiles.yml
-        echo "  outputs:" >> ~/.dbt/profiles.yml
-        echo "    dev:" >> ~/.dbt/profiles.yml
-        echo "      type: postgres" >> ~/.dbt/profiles.yml
-        echo "      host: localhost" >> ~/.dbt/profiles.yml
-        echo "      user: usuario_falso" >> ~/.dbt/profiles.yml
-        echo "      password: senha_falsa" >> ~/.dbt/profiles.yml
-        echo "      port: 5432" >> ~/.dbt/profiles.yml
-        echo "      dbname: banco_falso" >> ~/.dbt/profiles.yml
-        echo "      schema: analytics" >> ~/.dbt/profiles.yml
+        cd transformacoes_asaas
+        echo "transformacoes_asaas:" > profiles.yml
+        echo "  target: dev" >> profiles.yml
+        echo "  outputs:" >> profiles.yml
+        echo "    dev:" >> profiles.yml
+        echo "      type: postgres" >> profiles.yml
+        echo "      host: localhost" >> profiles.yml
+        echo "      user: usuario_ci" >> profiles.yml
+        echo "      password: senha_ci" >> profiles.yml
+        echo "      port: 5432" >> profiles.yml
+        echo "      dbname: banco_ci" >> profiles.yml
+        echo "      schema: analytics" >> profiles.yml
 
     - name: Instalar Dependências
       run: |
         cd transformacoes_asaas
-        dbt deps --profiles-dir ~/.dbt
+        # O ponto (.) diz ao dbt: "Use o profiles.yml que está nesta pasta aqui"
+        dbt deps --profiles-dir .
 
     - name: Verificar Sintaxe (Parse)
       run: |
         cd transformacoes_asaas
-        # Aqui também forçamos o caminho do profile
-        dbt parse --profiles-dir ~/.dbt
+        dbt parse --profiles-dir .
