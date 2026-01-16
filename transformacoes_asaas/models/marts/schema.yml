@@ -18,6 +18,7 @@ models:
       - name: id_cliente
         description: "Chave estrangeira do cliente que realizou a compra."
         tests:
+          - unique
           - not_null
 
       - name: valor_transacao
@@ -46,3 +47,29 @@ models:
 
       - name: profissao
         description: "Profissão do cliente normalizada e higienizada (sem erros de digitação)."
+
+      - name: mart_pagamentos_pivot
+        description: "Tabela pivotada que consolida o valor total transacionado por dia e por método de pagamento. Ideal para gráficos de evolução temporal."
+        columns:
+          - name: data
+            description: "Data da transação (granularidade diária)."
+            tests:
+              - unique
+              - not_null
+
+      - name: total_pix
+        description: "Soma total do valor transacionado via PIX neste dia."
+
+      - name: total_boleto
+        description: "Soma total do valor transacionado via Boleto neste dia."
+
+      - name: total_cartao_de_credito
+        description: "Soma total via Cartão de Crédito."
+
+      - name: total_cartao_de_debito
+        description: "Soma total via Cartão de Débito."
+        
+      - name: qtd_transacoes_total
+        description: "Contagem absoluta de transações no dia (independente do método)."
+      
+  

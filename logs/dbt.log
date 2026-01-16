@@ -306,3 +306,522 @@ Runtime Error
 [0m16:57:18.604809 [debug] [MainThread]: Command `dbt docs serve` failed at 16:57:18.604674 after 0.07 seconds
 [0m16:57:18.605188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba77b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a57bb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba04ad0>]}
 [0m16:57:18.605546 [debug] [MainThread]: Flushing usage events
+[0m13:19:20.662944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e34d250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfaf610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e34f910>]}
+
+
+============================== 13:19:20.667370 | d5d781bc-f6ac-4e46-b0eb-e5b4e8a741ab ==============================
+[0m13:19:20.667370 [info ] [MainThread]: Running with dbt=1.7.0
+[0m13:19:20.667915 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/julianabicalho/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True'}
+[0m13:19:20.668400 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:19:20.670482 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.07030479, "process_user_time": 1.8122, "process_kernel_time": 0.297873, "process_mem_max_rss": "120635392", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:19:20.670949 [debug] [MainThread]: Command `dbt docs generate` failed at 13:19:20.670831 after 0.07 seconds
+[0m13:19:20.671300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2dcd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2dc2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e04f290>]}
+[0m13:19:20.671627 [debug] [MainThread]: Flushing usage events
+[0m15:07:34.708608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c2b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c017990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfe1dd0>]}
+
+
+============================== 15:07:34.714549 | 2a4b3b75-fd3e-4c8c-8ac6-b7ebcc87c989 ==============================
+[0m15:07:34.714549 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:07:34.715102 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:07:34.715827 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:07:34.717992 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.0726035, "process_user_time": 1.72343, "process_kernel_time": 0.193138, "process_mem_max_rss": "120307712", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:07:34.718418 [debug] [MainThread]: Command `dbt deps` failed at 15:07:34.718303 after 0.07 seconds
+[0m15:07:34.718760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd01e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd02350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bd9090>]}
+[0m15:07:34.719391 [debug] [MainThread]: Flushing usage events
+[0m15:07:42.515541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1324d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7a4990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c55ca50>]}
+
+
+============================== 15:07:42.519228 | 58cde9cf-04f9-496a-89a9-fae550b61684 ==============================
+[0m15:07:42.519228 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:07:42.519757 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:07:42.520482 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:07:42.522640 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.06653679, "process_user_time": 1.700549, "process_kernel_time": 0.194335, "process_mem_max_rss": "120602624", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:07:42.523077 [debug] [MainThread]: Command `dbt deps` failed at 15:07:42.522962 after 0.07 seconds
+[0m15:07:42.523439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c16df90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c445fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4e9e10>]}
+[0m15:07:42.523940 [debug] [MainThread]: Flushing usage events
+[0m15:09:42.436919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a603fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fc3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fc0290>]}
+
+
+============================== 15:09:42.440439 | 00ac785b-4a41-45b3-9326-9695a9917167 ==============================
+[0m15:09:42.440439 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:09:42.440977 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:42.574241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '00ac785b-4a41-45b3-9326-9695a9917167', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10935ab50>]}
+[0m15:09:42.575823 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-zonnsvw3'
+[0m15:09:42.576359 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:09:43.110130 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:09:43.111702 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:09:43.162629 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:09:43.173926 [info ] [MainThread]: Updating lock file in file path: /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/package-lock.yml
+[0m15:09:43.175262 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-6o1te16i'
+[0m15:09:43.178897 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:09:43.672686 [info ] [MainThread]: Installed from version 1.3.0
+[0m15:09:43.673121 [info ] [MainThread]: Updated version available: 1.3.3
+[0m15:09:43.673474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '00ac785b-4a41-45b3-9326-9695a9917167', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3a6450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5f2f90>]}
+[0m15:09:43.673840 [info ] [MainThread]: 
+[0m15:09:43.674132 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m15:09:43.676700 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.2987053, "process_user_time": 1.91593, "process_kernel_time": 0.281619, "process_mem_max_rss": "128647168", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:09:43.677121 [debug] [MainThread]: Command `dbt deps` succeeded at 15:09:43.677006 after 1.30 seconds
+[0m15:09:43.677427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5d69d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3a6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f978d0>]}
+[0m15:09:43.677731 [debug] [MainThread]: Flushing usage events
+[0m15:10:02.599676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c38c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c383fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd2f590>]}
+
+
+============================== 15:10:02.603046 | ac9aac0e-2123-4960-aca6-d1b4b6eb68af ==============================
+[0m15:10:02.603046 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:10:02.603558 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:10:02.736814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ac9aac0e-2123-4960-aca6-d1b4b6eb68af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4ade90>]}
+[0m15:10:02.738583 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-8j3fhs5p'
+[0m15:10:02.739103 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:10:02.784056 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:10:02.785139 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:10:02.846787 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:10:02.851870 [error] [MainThread]: Encountered an error:
+Could not find a matching compatible version for package dbt-labs/dbt_utils
+  Requested range: =1.7.0, =1.7.0
+  Compatible versions: ['0.0.1', '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6', '0.1.7', '0.1.8', '0.1.9', '0.1.10', '0.1.11', '0.1.12', '0.1.13', '0.1.14', '0.1.15', '0.1.16', '0.1.17', '0.1.18', '0.1.19', '0.1.20', '0.1.21', '0.1.22', '0.1.23', '0.1.24', '0.1.25', '0.2.0', '0.2.1', '0.2.2', '0.2.3', '0.2.4', '0.2.5', '0.3.0', '0.4.0', '0.4.1', '0.5.0', '0.8.0', '0.8.1', '0.8.2', '0.8.3', '0.8.4', '0.8.5', '0.8.6', '0.9.0', '0.9.1', '0.9.2', '0.9.5', '0.9.6', '0.9.7', '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2', '1.2.0', '1.2.1', '1.3.0', '1.3.1', '1.3.2', '1.3.3']
+
+  Not shown: package versions incompatible with installed version of dbt-core
+  To include them, run 'dbt --no-version-check deps'
+[0m15:10:02.854355 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.3139505, "process_user_time": 1.846477, "process_kernel_time": 0.219661, "process_mem_max_rss": "127909888", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:10:02.854821 [debug] [MainThread]: Command `dbt deps` failed at 15:10:02.854697 after 0.31 seconds
+[0m15:10:02.855177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c032dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bceec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4a5cd0>]}
+[0m15:10:02.855510 [debug] [MainThread]: Flushing usage events
+[0m15:10:14.532631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10daaac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de49c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dacbad0>]}
+
+
+============================== 15:10:14.535928 | 5906b556-ceb0-44c8-bf7d-98248368b2a4 ==============================
+[0m15:10:14.535928 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:10:14.536438 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'profiles_dir': '/Users/julianabicalho/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:10:14.671337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5906b556-ceb0-44c8-bf7d-98248368b2a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dade750>]}
+[0m15:10:14.672980 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-3adb8a25'
+[0m15:10:14.673460 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:10:14.740297 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:10:14.741467 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:10:14.787355 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:10:14.796145 [info ] [MainThread]: Updating lock file in file path: /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/package-lock.yml
+[0m15:10:14.817789 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-9_zhtiqj'
+[0m15:10:14.821423 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:10:15.115655 [info ] [MainThread]: Installed from version 1.3.3
+[0m15:10:15.116060 [info ] [MainThread]: Up to date!
+[0m15:10:15.116421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '5906b556-ceb0-44c8-bf7d-98248368b2a4', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7b9750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de70d50>]}
+[0m15:10:15.119158 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.64498985, "process_user_time": 1.886904, "process_kernel_time": 0.257447, "process_mem_max_rss": "128483328", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:10:15.119610 [debug] [MainThread]: Command `dbt deps` succeeded at 15:10:15.119491 after 0.65 seconds
+[0m15:10:15.119926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dde9610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7a6610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7a6b10>]}
+[0m15:10:15.120243 [debug] [MainThread]: Flushing usage events
+[0m15:13:15.979599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d46fdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d42e2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d771850>]}
+
+
+============================== 15:13:15.984257 | 9b1979c3-1127-4870-9cb2-90c928bb9db1 ==============================
+[0m15:13:15.984257 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:13:15.984784 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --select analise_pagamentos', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:13:16.223763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b1979c3-1127-4870-9cb2-90c928bb9db1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db3f290>]}
+[0m15:13:16.339824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b1979c3-1127-4870-9cb2-90c928bb9db1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db3f290>]}
+[0m15:13:16.341202 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:13:16.359308 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    No dbt_project.yml found at expected path /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_packages/dbt_utils 2/dbt_project.yml
+    Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+    
+
+Error encountered in /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_packages/dbt_utils 2
+[0m15:13:16.362344 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.4431734, "process_user_time": 2.039655, "process_kernel_time": 0.264742, "process_mem_max_rss": "129482752", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:13:16.362861 [debug] [MainThread]: Command `dbt compile` failed at 15:13:16.362739 after 0.44 seconds
+[0m15:13:16.363269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db3e710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dad22d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e648250>]}
+[0m15:13:16.404143 [debug] [MainThread]: Flushing usage events
+[0m15:13:42.020146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b67d990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9b5950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9b51d0>]}
+
+
+============================== 15:13:42.023990 | 94ded47f-085b-4c16-a2a5-2eda7247ca70 ==============================
+[0m15:13:42.023990 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:13:42.024545 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --select analise_pagamentos', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:13:42.253335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '94ded47f-085b-4c16-a2a5-2eda7247ca70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c230150>]}
+[0m15:13:42.369919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '94ded47f-085b-4c16-a2a5-2eda7247ca70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c221410>]}
+[0m15:13:42.370544 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:13:42.387838 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    No dbt_project.yml found at expected path /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_packages/dbt_utils 2/dbt_project.yml
+    Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+    
+
+Error encountered in /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_packages/dbt_utils 2
+[0m15:13:42.391049 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.43039712, "process_user_time": 2.043675, "process_kernel_time": 0.230723, "process_mem_max_rss": "129810432", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:13:42.391805 [debug] [MainThread]: Command `dbt compile` failed at 15:13:42.391506 after 0.43 seconds
+[0m15:13:42.392621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b70b250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd50bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b63f3d0>]}
+[0m15:13:42.435555 [debug] [MainThread]: Flushing usage events
+[0m15:20:30.232909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c445fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c37ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c37e710>]}
+
+
+============================== 15:20:30.237022 | 8fb0ce5c-9bf4-435b-b508-ade54eb87954 ==============================
+[0m15:20:30.237022 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:20:30.237535 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:30.370827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8fb0ce5c-9bf4-435b-b508-ade54eb87954', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c68bad0>]}
+[0m15:20:30.373474 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-32l13rbq'
+[0m15:20:30.373868 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:20:30.671439 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:20:30.674274 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:20:30.805685 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:20:30.815226 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:20:31.319854 [info ] [MainThread]: Installed from version 1.3.3
+[0m15:20:31.320243 [info ] [MainThread]: Up to date!
+[0m15:20:31.320588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '8fb0ce5c-9bf4-435b-b508-ade54eb87954', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c24ee10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf6f910>]}
+[0m15:20:31.323541 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.1512208, "process_user_time": 1.918962, "process_kernel_time": 0.31666, "process_mem_max_rss": "128745472", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:20:31.323990 [debug] [MainThread]: Command `dbt deps` succeeded at 15:20:31.323866 after 1.15 seconds
+[0m15:20:31.324314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c388a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c61cf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c272ed0>]}
+[0m15:20:31.324635 [debug] [MainThread]: Flushing usage events
+[0m15:21:32.972766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0401d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd964d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdb2810>]}
+
+
+============================== 15:21:32.977066 | c7898ab0-d319-417c-8928-555409a1788d ==============================
+[0m15:21:32.977066 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:21:32.977579 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt compile --select analise_pagamentos', 'send_anonymous_usage_stats': 'True'}
+[0m15:21:33.216712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c7898ab0-d319-417c-8928-555409a1788d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea3e710>]}
+[0m15:21:33.332344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c7898ab0-d319-417c-8928-555409a1788d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0db550>]}
+[0m15:21:33.333814 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:21:33.351951 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m15:21:33.352689 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:21:33.353049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c7898ab0-d319-417c-8928-555409a1788d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5508d0>]}
+[0m15:21:34.177653 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transformacoes_asaas.example
+[0m15:21:34.181976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c7898ab0-d319-417c-8928-555409a1788d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb841d0>]}
+[0m15:21:34.193171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c7898ab0-d319-417c-8928-555409a1788d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec076d0>]}
+[0m15:21:34.193641 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m15:21:34.193986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7898ab0-d319-417c-8928-555409a1788d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dceabd0>]}
+[0m15:21:34.194464 [warn ] [MainThread]: The selection criterion 'analise_pagamentos' does not match any nodes
+[0m15:21:34.195356 [info ] [MainThread]: 
+[0m15:21:34.195639 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:21:34.196019 [debug] [MainThread]: Command end result
+[0m15:21:34.205623 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.2923216, "process_user_time": 2.845645, "process_kernel_time": 0.2708, "process_mem_max_rss": "133267456", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:21:34.206080 [debug] [MainThread]: Command `dbt compile` succeeded at 15:21:34.205968 after 1.29 seconds
+[0m15:21:34.206419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099f2a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec135d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e02b550>]}
+[0m15:21:34.206751 [debug] [MainThread]: Flushing usage events
+[0m15:22:13.309263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1bb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e18c2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de69990>]}
+
+
+============================== 15:22:13.313426 | d81a9282-ffe9-4c96-a98a-4eccf05d00cb ==============================
+[0m15:22:13.313426 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:22:13.313950 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile --select analise_pagamentos', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:13.553489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd81a9282-ffe9-4c96-a98a-4eccf05d00cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1ed090>]}
+[0m15:22:13.670010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd81a9282-ffe9-4c96-a98a-4eccf05d00cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e18f490>]}
+[0m15:22:13.671473 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:22:13.678538 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m15:22:13.681939 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.43400496, "process_user_time": 2.03269, "process_kernel_time": 0.263257, "process_mem_max_rss": "129662976", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:22:13.682457 [debug] [MainThread]: Command `dbt compile` failed at 15:22:13.682339 after 0.43 seconds
+[0m15:22:13.682884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c91add0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1de7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de37650>]}
+[0m15:22:13.683263 [debug] [MainThread]: Flushing usage events
+[0m15:22:28.275988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c39c410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c343f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c340a50>]}
+
+
+============================== 15:22:28.279572 | 51a6d09d-1c73-4b8f-b9d2-6a454517a6fb ==============================
+[0m15:22:28.279572 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:22:28.280098 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:28.411026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51a6d09d-1c73-4b8f-b9d2-6a454517a6fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c350b10>]}
+[0m15:22:28.413679 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-4vbsv7bc'
+[0m15:22:28.414090 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:22:28.692702 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:22:28.695930 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:22:28.755196 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:22:28.764194 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:22:29.253626 [info ] [MainThread]: Installed from version 1.3.3
+[0m15:22:29.254026 [info ] [MainThread]: Up to date!
+[0m15:22:29.254378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '51a6d09d-1c73-4b8f-b9d2-6a454517a6fb', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6a2c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c769e90>]}
+[0m15:22:29.257156 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.0398734, "process_user_time": 1.915744, "process_kernel_time": 0.277723, "process_mem_max_rss": "128532480", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:22:29.257620 [debug] [MainThread]: Command `dbt deps` succeeded at 15:22:29.257500 after 1.04 seconds
+[0m15:22:29.257940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6d5750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6cea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bad95d0>]}
+[0m15:22:29.258263 [debug] [MainThread]: Flushing usage events
+[0m15:23:10.480947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f08310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e9c9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109adfa10>]}
+
+
+============================== 15:23:10.485161 | 39dcb85d-3094-488b-8945-0e571c061be8 ==============================
+[0m15:23:10.485161 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:23:10.485680 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'version_check': 'True', 'profiles_dir': '/Users/julianabicalho/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile --select analise_pagamentos', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:10.717741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39dcb85d-3094-488b-8945-0e571c061be8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6a9350>]}
+[0m15:23:10.834829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39dcb85d-3094-488b-8945-0e571c061be8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e97490>]}
+[0m15:23:10.836200 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:23:10.854444 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m15:23:10.937353 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:23:10.937747 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:23:10.938089 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transformacoes_asaas.example
+[0m15:23:10.942707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39dcb85d-3094-488b-8945-0e571c061be8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adc4950>]}
+[0m15:23:10.953944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39dcb85d-3094-488b-8945-0e571c061be8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac7a550>]}
+[0m15:23:10.954331 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m15:23:10.954638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39dcb85d-3094-488b-8945-0e571c061be8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac57190>]}
+[0m15:23:10.955081 [warn ] [MainThread]: The selection criterion 'analise_pagamentos' does not match any nodes
+[0m15:23:10.955916 [info ] [MainThread]: 
+[0m15:23:10.956190 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:23:10.956570 [debug] [MainThread]: Command end result
+[0m15:23:10.965642 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.5480658, "process_user_time": 2.129479, "process_kernel_time": 0.259056, "process_mem_max_rss": "133349376", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:23:10.966084 [debug] [MainThread]: Command `dbt compile` succeeded at 15:23:10.965978 after 0.55 seconds
+[0m15:23:10.966411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ace850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a139250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b96490>]}
+[0m15:23:10.966727 [debug] [MainThread]: Flushing usage events
+[0m15:24:36.369158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b891950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b873390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b873d90>]}
+
+
+============================== 15:24:36.373374 | 9af1d40a-9429-4d34-8283-52bb8c8db086 ==============================
+[0m15:24:36.373374 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:24:36.373886 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'profiles_dir': '/Users/julianabicalho/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --select mart_analise_pagamentos', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:24:36.610690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9af1d40a-9429-4d34-8283-52bb8c8db086', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c275dd0>]}
+[0m15:24:36.726175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9af1d40a-9429-4d34-8283-52bb8c8db086', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd86190>]}
+[0m15:24:36.727512 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:24:36.745562 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m15:24:36.828741 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:24:36.829118 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:24:36.829463 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transformacoes_asaas.example
+[0m15:24:36.834026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9af1d40a-9429-4d34-8283-52bb8c8db086', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4abad0>]}
+[0m15:24:36.845430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9af1d40a-9429-4d34-8283-52bb8c8db086', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdbe590>]}
+[0m15:24:36.845832 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m15:24:36.846137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9af1d40a-9429-4d34-8283-52bb8c8db086', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c3c0f10>]}
+[0m15:24:36.846582 [warn ] [MainThread]: The selection criterion 'mart_analise_pagamentos' does not match any nodes
+[0m15:24:36.847410 [info ] [MainThread]: 
+[0m15:24:36.847690 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:24:36.848071 [debug] [MainThread]: Command end result
+[0m15:24:36.857109 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.548134, "process_user_time": 2.0987, "process_kernel_time": 0.264523, "process_mem_max_rss": "133726208", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:24:36.857578 [debug] [MainThread]: Command `dbt compile` succeeded at 15:24:36.857463 after 0.55 seconds
+[0m15:24:36.857917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0b3c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b863150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1de0d0>]}
+[0m15:24:36.858240 [debug] [MainThread]: Flushing usage events
+[0m15:27:06.141937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b99c590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bcae2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc76850>]}
+
+
+============================== 15:27:06.147791 | ab74d9a8-ae58-419b-ad8e-ef5c46c832c3 ==============================
+[0m15:27:06.147791 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:27:06.148439 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --select mart_analise_pagamentos', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:27:06.437761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ab74d9a8-ae58-419b-ad8e-ef5c46c832c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0710d0>]}
+[0m15:27:06.559861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ab74d9a8-ae58-419b-ad8e-ef5c46c832c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4da250>]}
+[0m15:27:06.561418 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:27:06.580352 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m15:27:06.670241 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:27:06.670620 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:27:06.671035 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transformacoes_asaas.example
+[0m15:27:06.676006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ab74d9a8-ae58-419b-ad8e-ef5c46c832c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cbf65d0>]}
+[0m15:27:06.688909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ab74d9a8-ae58-419b-ad8e-ef5c46c832c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c97ae10>]}
+[0m15:27:06.689309 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m15:27:06.689617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ab74d9a8-ae58-419b-ad8e-ef5c46c832c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b99ea50>]}
+[0m15:27:06.690147 [warn ] [MainThread]: The selection criterion 'mart_analise_pagamentos' does not match any nodes
+[0m15:27:06.691062 [info ] [MainThread]: 
+[0m15:27:06.691358 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:27:06.691759 [debug] [MainThread]: Command end result
+[0m15:27:06.701412 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.6236613, "process_user_time": 2.166089, "process_kernel_time": 0.298054, "process_mem_max_rss": "132907008", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:27:06.701845 [debug] [MainThread]: Command `dbt compile` succeeded at 15:27:06.701736 after 0.62 seconds
+[0m15:27:06.702185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba36d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfbd590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfc5190>]}
+[0m15:27:06.702505 [debug] [MainThread]: Flushing usage events
+[0m15:30:34.513084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dd5290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cf7390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cf6cd0>]}
+
+
+============================== 15:30:34.518019 | c026924a-2748-45de-b85f-039866b0ea09 ==============================
+[0m15:30:34.518019 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:30:34.518534 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt compile --select mart_analise_pagamentos', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:34.756068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c026924a-2748-45de-b85f-039866b0ea09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aaba710>]}
+[0m15:30:34.871640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c026924a-2748-45de-b85f-039866b0ea09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0c1890>]}
+[0m15:30:34.873027 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:30:34.891050 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m15:30:34.941151 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:30:34.941660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c026924a-2748-45de-b85f-039866b0ea09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095f1150>]}
+[0m15:30:35.722844 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.transformacoes_asaas.staging
+- models.transformacoes_asaas.marts
+[0m15:30:35.727122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c026924a-2748-45de-b85f-039866b0ea09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa09690>]}
+[0m15:30:35.738121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c026924a-2748-45de-b85f-039866b0ea09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac6fad0>]}
+[0m15:30:35.738553 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m15:30:35.738870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c026924a-2748-45de-b85f-039866b0ea09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac9a8d0>]}
+[0m15:30:35.739330 [warn ] [MainThread]: The selection criterion 'mart_analise_pagamentos' does not match any nodes
+[0m15:30:35.740201 [info ] [MainThread]: 
+[0m15:30:35.740472 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:30:35.740843 [debug] [MainThread]: Command end result
+[0m15:30:35.749765 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.2964503, "process_user_time": 2.849589, "process_kernel_time": 0.271736, "process_mem_max_rss": "133545984", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:30:35.750207 [debug] [MainThread]: Command `dbt compile` succeeded at 15:30:35.750097 after 1.30 seconds
+[0m15:30:35.750550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ab78d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acf3b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109957210>]}
+[0m15:30:35.750932 [debug] [MainThread]: Flushing usage events
+[0m15:30:56.488304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098f8550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095d47d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095d6210>]}
+
+
+============================== 15:30:56.492924 | a3ab3825-f891-4cfc-af44-6b13d5b37683 ==============================
+[0m15:30:56.492924 [info ] [MainThread]: Running with dbt=1.7.0
+[0m15:30:56.493454 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --select mart_analise_pagamentos', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:56.729183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a3ab3825-f891-4cfc-af44-6b13d5b37683', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109999710>]}
+[0m15:30:56.847328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a3ab3825-f891-4cfc-af44-6b13d5b37683', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109977150>]}
+[0m15:30:56.848770 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m15:30:56.867038 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m15:30:56.949224 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:30:56.949636 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:30:56.950012 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.transformacoes_asaas.marts
+- models.transformacoes_asaas.staging
+[0m15:30:56.954642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a3ab3825-f891-4cfc-af44-6b13d5b37683', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a533cd0>]}
+[0m15:30:56.965821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a3ab3825-f891-4cfc-af44-6b13d5b37683', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e4ca90>]}
+[0m15:30:56.966217 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m15:30:56.966523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a3ab3825-f891-4cfc-af44-6b13d5b37683', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106631e90>]}
+[0m15:30:56.966962 [warn ] [MainThread]: The selection criterion 'mart_analise_pagamentos' does not match any nodes
+[0m15:30:56.967799 [info ] [MainThread]: 
+[0m15:30:56.968078 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:30:56.968465 [debug] [MainThread]: Command end result
+[0m15:30:56.977454 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.551316, "process_user_time": 2.140852, "process_kernel_time": 0.276317, "process_mem_max_rss": "133480448", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:30:56.977851 [debug] [MainThread]: Command `dbt compile` succeeded at 15:30:56.977746 after 0.55 seconds
+[0m15:30:56.978171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098e63d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a445cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098f2090>]}
+[0m15:30:56.978475 [debug] [MainThread]: Flushing usage events
+[0m09:09:09.144405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b268750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b91f010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b91cb10>]}
+
+
+============================== 09:09:09.150084 | f35915e2-bab1-41f1-9ede-95317c1b4124 ==============================
+[0m09:09:09.150084 [info ] [MainThread]: Running with dbt=1.7.0
+[0m09:09:09.150608 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'version_check': 'True', 'profiles_dir': '/Users/julianabicalho/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt clean', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:09.327121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f35915e2-bab1-41f1-9ede-95317c1b4124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5a0510>]}
+[0m09:09:09.358725 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.27758053, "process_user_time": 1.82094, "process_kernel_time": 0.291226, "process_mem_max_rss": "122667008", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:09:09.359193 [debug] [MainThread]: Command `dbt clean` succeeded at 09:09:09.359073 after 0.28 seconds
+[0m09:09:09.359533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b232710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b32ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8b15d0>]}
+[0m09:09:09.359877 [debug] [MainThread]: Flushing usage events
+[0m09:09:21.725960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9ad110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dcec250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dcec090>]}
+
+
+============================== 09:09:21.729714 | f37f8543-f996-42c7-8027-d2362b8b717c ==============================
+[0m09:09:21.729714 [info ] [MainThread]: Running with dbt=1.7.0
+[0m09:09:21.730270 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'profiles_dir': '/Users/julianabicalho/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:21.863310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f37f8543-f996-42c7-8027-d2362b8b717c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e125d90>]}
+[0m09:09:21.865370 [debug] [MainThread]: Set downloads directory='/var/folders/mc/z1h9g1gs113dyl4_v0vgl0j40000gn/T/dbt-downloads-jow22bkc'
+[0m09:09:21.865768 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:09:22.083114 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:09:22.086515 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:09:22.129283 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:09:22.138064 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:09:22.445265 [info ] [MainThread]: Installed from version 1.3.3
+[0m09:09:22.445672 [info ] [MainThread]: Up to date!
+[0m09:09:22.446032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'f37f8543-f996-42c7-8027-d2362b8b717c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0c64d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9d0790>]}
+[0m09:09:22.448719 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.7822583, "process_user_time": 1.893206, "process_kernel_time": 0.284392, "process_mem_max_rss": "128614400", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:09:22.449153 [debug] [MainThread]: Command `dbt deps` succeeded at 09:09:22.449034 after 0.78 seconds
+[0m09:09:22.449466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da3fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dff2ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd4f390>]}
+[0m09:09:22.449776 [debug] [MainThread]: Flushing usage events
+[0m09:09:31.723365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba9bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b433290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b71c950>]}
+
+
+============================== 09:09:31.727273 | 71dbd3a8-c356-49a1-b199-956d867468b0 ==============================
+[0m09:09:31.727273 [info ] [MainThread]: Running with dbt=1.7.0
+[0m09:09:31.727783 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'debug': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --select mart_analise_pagamentos', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:31.972790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71dbd3a8-c356-49a1-b199-956d867468b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b742b90>]}
+[0m09:09:32.088196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '71dbd3a8-c356-49a1-b199-956d867468b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3ff750>]}
+[0m09:09:32.089067 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m09:09:32.107428 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m09:09:32.108287 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:09:32.108655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '71dbd3a8-c356-49a1-b199-956d867468b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5b4d10>]}
+[0m09:09:32.931758 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.transformacoes_asaas.staging
+- models.transformacoes_asaas.marts
+[0m09:09:32.936111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '71dbd3a8-c356-49a1-b199-956d867468b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c705190>]}
+[0m09:09:32.947296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71dbd3a8-c356-49a1-b199-956d867468b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c657f90>]}
+[0m09:09:32.947706 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m09:09:32.948016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71dbd3a8-c356-49a1-b199-956d867468b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c762a10>]}
+[0m09:09:32.948469 [warn ] [MainThread]: The selection criterion 'mart_analise_pagamentos' does not match any nodes
+[0m09:09:32.949321 [info ] [MainThread]: 
+[0m09:09:32.949606 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:09:32.949981 [debug] [MainThread]: Command end result
+[0m09:09:32.958983 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.2950147, "process_user_time": 2.870928, "process_kernel_time": 0.254965, "process_mem_max_rss": "133414912", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:09:32.959415 [debug] [MainThread]: Command `dbt compile` succeeded at 09:09:32.959303 after 1.30 seconds
+[0m09:09:32.959755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4a3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3fed50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba568d0>]}
+[0m09:09:32.960082 [debug] [MainThread]: Flushing usage events
+[0m09:12:06.498968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2fba90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4871d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be32350>]}
+
+
+============================== 09:12:06.506329 | 9dfbed8a-ea5f-44c9-8930-bb60da5a9b9f ==============================
+[0m09:12:06.506329 [info ] [MainThread]: Running with dbt=1.7.0
+[0m09:12:06.506871 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/julianabicalho/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --select mart_analise_pagamentos', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:12:06.790022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9dfbed8a-ea5f-44c9-8930-bb60da5a9b9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce99dd0>]}
+[0m09:12:06.905913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9dfbed8a-ea5f-44c9-8930-bb60da5a9b9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c94ffd0>]}
+[0m09:12:06.907252 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m09:12:06.925796 [debug] [MainThread]: checksum: 8434eacd4ffdf0ca3ab22bf0e2d55b45306c9599613e842b959405abc489e606, vars: {}, profile: , target: , version: 1.7.0
+[0m09:12:07.008273 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:12:07.008642 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:12:07.008999 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.transformacoes_asaas.staging
+- models.transformacoes_asaas.marts
+[0m09:12:07.013605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9dfbed8a-ea5f-44c9-8930-bb60da5a9b9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d088dd0>]}
+[0m09:12:07.024933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9dfbed8a-ea5f-44c9-8930-bb60da5a9b9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c99b650>]}
+[0m09:12:07.025344 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 517 macros, 0 groups, 0 semantic models
+[0m09:12:07.025657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9dfbed8a-ea5f-44c9-8930-bb60da5a9b9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091c5a10>]}
+[0m09:12:07.026115 [warn ] [MainThread]: The selection criterion 'mart_analise_pagamentos' does not match any nodes
+[0m09:12:07.026957 [info ] [MainThread]: 
+[0m09:12:07.027232 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:12:07.027614 [debug] [MainThread]: Command end result
+[0m09:12:07.036570 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.5998943, "process_user_time": 2.108385, "process_kernel_time": 0.299663, "process_mem_max_rss": "133414912", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:12:07.037003 [debug] [MainThread]: Command `dbt compile` succeeded at 09:12:07.036891 after 0.60 seconds
+[0m09:12:07.037343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b997f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c476e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c47ead0>]}
+[0m09:12:07.037664 [debug] [MainThread]: Flushing usage events
+[0m09:12:59.167661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4f4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db1a590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d2f90>]}
+
+
+============================== 09:12:59.171525 | c8287540-da80-4529-9dfc-8bd7a70a6cd7 ==============================
+[0m09:12:59.171525 [info ] [MainThread]: Running with dbt=1.7.0
+[0m09:12:59.172061 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/logs', 'version_check': 'True', 'profiles_dir': '/Users/julianabicalho/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:12:59.172601 [info ] [MainThread]: dbt version: 1.7.0
+[0m09:12:59.172906 [info ] [MainThread]: python version: 3.11.8
+[0m09:12:59.173192 [info ] [MainThread]: python path: /Users/julianabicalho/.pyenv/versions/3.11.8/bin/python3
+[0m09:12:59.173458 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m09:12:59.275288 [info ] [MainThread]: Using profiles dir at /Users/julianabicalho/.dbt
+[0m09:12:59.275777 [info ] [MainThread]: Using profiles.yml file at /Users/julianabicalho/.dbt/profiles.yml
+[0m09:12:59.276061 [info ] [MainThread]: Using dbt_project.yml file at /Users/julianabicalho/Desktop/projetos/projeto_asaas/projeto_asaas_fintech/dbt_project.yml
+[0m09:12:59.276503 [info ] [MainThread]: adapter type: postgres
+[0m09:12:59.276766 [info ] [MainThread]: adapter version: 1.7.0
+[0m09:12:59.376671 [info ] [MainThread]: Configuration:
+[0m09:12:59.377119 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:12:59.377408 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m09:12:59.377675 [info ] [MainThread]: Required dependencies:
+[0m09:12:59.378017 [debug] [MainThread]: Executing "git --help"
+[0m09:12:59.396290 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:12:59.397194 [debug] [MainThread]: STDERR: "b''"
+[0m09:12:59.397542 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:12:59.397858 [info ] [MainThread]: Connection:
+[0m09:12:59.398183 [info ] [MainThread]:   host: localhost
+[0m09:12:59.398435 [info ] [MainThread]:   port: 5432
+[0m09:12:59.398684 [info ] [MainThread]:   user: postgres
+[0m09:12:59.398947 [info ] [MainThread]:   database: asaas_fintech
+[0m09:12:59.399187 [info ] [MainThread]:   schema: analytics
+[0m09:12:59.399425 [info ] [MainThread]:   connect_timeout: 10
+[0m09:12:59.399661 [info ] [MainThread]:   role: None
+[0m09:12:59.399905 [info ] [MainThread]:   search_path: None
+[0m09:12:59.400146 [info ] [MainThread]:   keepalives_idle: 0
+[0m09:12:59.400408 [info ] [MainThread]:   sslmode: None
+[0m09:12:59.400665 [info ] [MainThread]:   sslcert: None
+[0m09:12:59.400932 [info ] [MainThread]:   sslkey: None
+[0m09:12:59.401335 [info ] [MainThread]:   sslrootcert: None
+[0m09:12:59.401650 [info ] [MainThread]:   application_name: dbt
+[0m09:12:59.401951 [info ] [MainThread]:   retries: 1
+[0m09:12:59.402482 [info ] [MainThread]: Registered adapter: postgres=1.7.0
+[0m09:12:59.408898 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m09:12:59.409551 [debug] [MainThread]: Using postgres connection "debug"
+[0m09:12:59.409824 [debug] [MainThread]: On debug: select 1 as id
+[0m09:12:59.410077 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:12:59.452290 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:12:59.453557 [debug] [MainThread]: On debug: Close
+[0m09:12:59.453908 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:12:59.454208 [info ] [MainThread]: [32mAll checks passed![0m
+[0m09:12:59.456924 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.35161924, "process_user_time": 1.933721, "process_kernel_time": 0.242507, "process_mem_max_rss": "136495104", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:12:59.457397 [debug] [MainThread]: Command `dbt debug` succeeded at 09:12:59.457277 after 0.35 seconds
+[0m09:12:59.457713 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:12:59.458047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7a2090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7a1f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4c9cd0>]}
+[0m09:12:59.458425 [debug] [MainThread]: Flushing usage events
