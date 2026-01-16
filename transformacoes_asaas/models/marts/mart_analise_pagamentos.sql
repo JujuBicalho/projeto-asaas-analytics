@@ -14,5 +14,5 @@ SELECT
     sum(valor_transacao) as valor_total_gasto,
     count(*) as qtd_total_transacoes
 
-FROM {{ ref('stg_transacoes') }}
+FROM {{ ref('stg_tabela_fantasma_que_nao_existe') }}
 GROUP BY 1
