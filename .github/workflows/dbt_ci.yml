@@ -8,8 +8,8 @@ on:
 
 jobs:
   build:
-    name: Verificar Instalação dbt
-    runs-on: ubuntu-latest 
+    name: Verificar Código
+    runs-on: ubuntu-latest
 
     steps:
     - name: Baixar código (Checkout)
@@ -24,12 +24,25 @@ jobs:
       run: |
         pip install dbt-postgres
 
-    
-    - name: Instalar Dependências do Projeto
+    - name: Criar Profile Temporário
+      run: |
+        mkdir -p ~/.dbt
+        echo "transformacoes_asaas:" > ~/.dbt/profiles.yml
+        echo "  target: dev" >> ~/.dbt/profiles.yml
+        echo "  outputs:" >> ~/.dbt/profiles.yml
+        echo "    dev:" >> ~/.dbt/profiles.yml
+        echo "      type: postgres" >> ~/.dbt/profiles.yml
+        echo "      host: localhost" >> ~/.dbt/profiles.yml
+        echo "      user: usuario_falso" >> ~/.dbt/profiles.yml
+        echo "      password: senha_falsa" >> ~/.dbt/profiles.yml
+        echo "      port: 5432" >> ~/.dbt/profiles.yml
+        echo "      dbname: banco_falso" >> ~/.dbt/profiles.yml
+        echo "      schema: analytics" >> ~/.dbt/profiles.yml
+
+    - name: Instalar Dependências
       run: |
         cd transformacoes_asaas
         dbt deps
-
 
     - name: Verificar Sintaxe (Parse)
       run: |
