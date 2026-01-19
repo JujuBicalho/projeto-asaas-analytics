@@ -1,0 +1,50 @@
+############# DOCUMENTAÇÃO #############
+version: 2
+
+sources:
+  - name: asaas_fintech
+    schema: public        
+    tables:
+      - name: transacoes_raw
+      - name: clientes_raw
+
+models:
+  - name: stg_transacoes
+    description: "Tabela de transações limpa e com regras de negócio."
+    columns:
+      - name: id
+        description: "Chave PK"
+        tests:
+          - unique
+          - not_null
+
+      - name: id_cliente
+        description: "Identificador do cliente."
+        tests:
+          - not_null
+
+      - name: status_transacao
+        description: "Status original da transação."
+        tests:
+          - accepted_values:
+              values: ['CONFIRMADO', 'FALHA', 'PROCESSANDO', 'ESTORNADO', 'PENDENTE']
+
+      - name: metodo_pagamento
+        tests:
+          - accepted_values:
+              values: 
+                - 'Cartão de Crédito'   
+                - 'Cartão de Débito'
+                - 'Boleto'
+                - 'Pix'
+                - 'Outros'
+
+      - name: categoria_ticket
+        description: "Classificação do valor da transação (Baixo, Médio, Alto)."
+
+  - name: stg_clientes  
+    columns:
+      - name: id_cliente
+        tests:
+          - unique    
+          - not_null
